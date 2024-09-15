@@ -1,10 +1,11 @@
 // components/Posts.js
 import React from 'react';
 import Post from './Post';
+import Loader from './Loader';
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
-    return <h2>Loading...</h2>;
+    return <Loader/>;
   }
 
   return (
